@@ -1,0 +1,114 @@
+$primary-color:#FFF5F0;
+$secondary-color:#302E2D;
+$banner-color:#C74A37;
+$offerbox-color:#E0D90B;
+
+@font-face {
+   font-family: myFirstFont;
+   src: url('SairaStencilOne-Regular.ttf');
+}
+@font-face {
+   font-family: SourceCode;
+   src: url('SourceCodePro-SemiBold.ttf');
+}
+@font-face {
+   font-family: Satisfy-Regular;
+   src: url('Satisfy-Regular.ttf');
+}
+;
+
+body{
+	background-color:$primary-color ;
+}
+.home_container{
+	display:flex;
+  margin:auto;
+  background-color:$secondary-color;
+  width:200rem;
+  align-items:center;
+  justify-content:center;
+
+}
+.cardbox{
+	width:25rem;
+
+
+}
+.card{
+	padding: 2rem;
+  height:13rem;
+  color:$primary-color;
+  background-color: $secondary-color;
+  padding-bottom: 4rem;
+  overflow-y:hidden;
+  margin:1rem;
+  margin-top:2.5rem;
+  margin-bottom:2.5rem;
+  border-top: solid .5px black;
+}
+.card h3{
+  text-align:center;
+}
+.cardbody{
+  overflow:hidden;
+}
+.card_image{
+  width:16rem;
+  padding-left:4rem;
+}
+.item1{
+ background-image: url('home2.jpg');
+ background-repeat: no-repeat;
+ width:800px;
+ height:535px;
+ justify-content: center;
+ align-items: center;
+ margin-left: 2.8rem;
+ margin-right:5rem;
+ margin-top:10rem;
+ border:solid $secondary-color .5rem;
+ border-radius:10px;
+
+}
+.item1 h1{
+  
+  margin:1rem 1rem 1rem 1rem;
+  padding-left:9rem;
+  padding-top:5rem;
+  color:$secondary-color;
+  font-size:5rem;
+  font-family:SourceCodePro-SemiBold ;
+  letter-spacing: 3px;
+  
+}
+.item1 h4{
+  color: $secondary-color;
+  margin:1rem 1rem 1rem 1rem;
+  padding-left:13.2rem;
+  padding-top:.1rem;
+  font-size:2.5rem;
+  font-family:Satisfy-Regular ;
+}
+.banner{
+  width:200rem;
+
+margin:auto;
+text-align:center;
+background-color:$banner-color;
+padding:2rem;
+  }
+  .offerbox{
+  margin:auto;
+  background-color:$offerbox-color;
+  width:25rem;
+  text-align:center;
+  padding:1rem;
+  }
+
+  @media only screen and (max-width: 800px) {
+  .home_container{
+  display:block;
+
+  }
+
+}
