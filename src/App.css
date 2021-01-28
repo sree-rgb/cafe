@@ -1,20 +1,12 @@
-@font-face {
-  font-family: myFirstFont;
-  src: url("SairaStencilOne-Regular.ttf"); }
-@font-face {
-  font-family: SourceCode;
-  src: url("SourceCodePro-SemiBold.ttf"); }
-@font-face {
-  font-family: Satisfy-Regular;
-  src: url("Satisfy-Regular.ttf"); }
 body {
-  background-color: #FFF5F0; }
+  background-color: #FFF5F0;
+  overflow-x: hidden; }
 
 .home_container {
   display: flex;
   margin: auto;
   background-color: #302E2D;
-  width: 200rem;
+  width: 100%;
   align-items: center;
   justify-content: center; }
 
@@ -22,14 +14,12 @@ body {
   width: 25rem; }
 
 .card {
-  padding: 2rem;
   height: 13rem;
   color: #FFF5F0;
-  background-color: #302E2D;
+  background-color: #595654;
   padding-bottom: 4rem;
-  overflow-y: hidden;
+  overflow: hidden;
   margin: 1rem;
-  margin-top: 2.5rem;
   margin-bottom: 2.5rem;
   border-top: solid .5px black; }
 
@@ -43,38 +33,14 @@ body {
   width: 16rem;
   padding-left: 4rem; }
 
-.item1 {
-  background-image: url("home2.jpg");
-  background-repeat: no-repeat;
-  width: 800px;
-  height: 535px;
-  justify-content: center;
-  align-items: center;
-  margin-left: 2.8rem;
-  margin-right: 5rem;
-  margin-top: 10rem;
-  border: solid #302E2D 0.5rem;
-  border-radius: 10px; }
+.card_image:hover {
+  animation: skew2 .7s; }
 
-.item1 h1 {
-  margin: 1rem 1rem 1rem 1rem;
-  padding-left: 9rem;
-  padding-top: 5rem;
-  color: #302E2D;
-  font-size: 5rem;
-  font-family: SourceCodePro-SemiBold;
-  letter-spacing: 3px; }
-
-.item1 h4 {
-  color: #302E2D;
-  margin: 1rem 1rem 1rem 1rem;
-  padding-left: 13.2rem;
-  padding-top: .1rem;
-  font-size: 2.5rem;
-  font-family: Satisfy-Regular; }
+.home_container img {
+  width: 60%; }
 
 .banner {
-  width: 200rem;
+  width: 100%;
   margin: auto;
   text-align: center;
   background-color: #C74A37;
@@ -89,6 +55,80 @@ body {
 
 @media only screen and (max-width: 800px) {
   .home_container {
-    display: block; } }
+    display: block;
+    width: 100%; }
+
+  .home_container > img {
+    width: 80%;
+    margin-left: 3rem; }
+
+  .card {
+    height: 25rem; }
+
+  .cardbox {
+    width: 100%; }
+
+  .card_image {
+    width: 100%;
+    padding: 0;
+    margin-left: 20%; }
+
+  .card h3 {
+    text-align: center; }
+
+  .banner {
+    margin-top: -10%; }
+
+  .offerbox {
+    margin-left: 10.5%; } }
+@media only screen and (max-width: 600px) {
+  .card {
+    height: 27rem;
+    margin-bottom: -10rem; }
+
+  .home_container > img {
+    width: 100%;
+    margin-left: 0; }
+
+  .banner {
+    width: 100%; }
+
+  .offerbox {
+    width: 98%;
+    margin-left: -13%; } }
+@media only screen and (max-width: 400px) {
+  .card {
+    height: 23rem;
+    margin-bottom: -10rem; }
+
+  .home_container > img {
+    width: 100%;
+    margin-left: 0; }
+
+  .banner {
+    width: 100%; }
+
+  .offerbox {
+    width: 98%;
+    margin-left: -13%; } }
+@keyframes grow {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(2.03); } }
+@keyframes skew {
+  from {
+    transform: rotateZ(0deg); }
+  to {
+    transform: rotateZ(3deg); } }
+@keyframes skew2 {
+  0% {
+    transform: rotateZ(0deg); }
+  25% {
+    transform: rotateZ(3deg); }
+  50% {
+    transform: rotateZ(-3deg); }
+  100% {
+    transform: rotateZ(0deg); } }
 
 /*# sourceMappingURL=App.css.map */
