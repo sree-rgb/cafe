@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" id="e8a6e089-f0a2-4336-8fc5-733c88302415" data-name="Layer 1" width="888" height="485.489" viewBox="0 0 888 485.489" version="1.1" sodipodi:docname="menudrink.svg" inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07, custom)">
+  <metadata id="metadata241">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>breakfast</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs id="defs239" />
+  <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1276" inkscape:window-height="1038" id="namedview237" showgrid="false" inkscape:zoom="1.2997205" inkscape:cx="543.97241" inkscape:cy="305.49346" inkscape:window-x="1280" inkscape:window-y="14" inkscape:window-maximized="0" inkscape:current-layer="e8a6e089-f0a2-4336-8fc5-733c88302415" inkscape:document-rotation="0" />
+  <title id="title2">breakfast</title>
+  <polygon points="737.552,369.675 736,307.634 827.952,307.634 825.98,386.448 823.538,484.181 740.414,484.181 " fill="#e6e6e6" id="polygon12" transform="matrix(1.9695401,0,0,1.9695401,-1102.9581,-496.48581)" style="stroke-width:0.507733;fill:#fff5f0;fill-opacity:1" />
+  <rect x="424.8598" y="26.82873" width="23.181112" height="307.14984" fill="#6c63ff" id="rect14" style="stroke-width:1;fill:#c74a37;fill-opacity:1" />
+  <path d="m 516.13542,226.37435 -4.38441,220.62788 H 362.52538 L 357.3883,188.5126 a 101.6951,101.6951 0 0 1 80.41018,11.05968 c 24.93257,14.74608 52.94216,22.6837 78.33694,26.80207 z" fill="#3f3d56" id="path16" style="stroke-width:1" />
+  <rect x="378.19669" y="251.21129" width="21.270876" height="21.270876" fill="#e6e6e6" id="rect18" style="stroke-width:1" />
+  <rect x="392.68491" y="207.74672" width="21.270876" height="21.270876" fill="#e6e6e6" id="rect20" style="stroke-width:1" />
+  <rect x="489.58759" y="-82.77076" width="21.270876" height="21.270876" transform="rotate(36.562591)" fill="#e6e6e6" id="rect22" style="stroke-width:1" />
+  <rect x="542.90717" y="-75.392769" width="21.270876" height="21.270876" transform="rotate(36.562591)" fill="#e6e6e6" id="rect24" style="stroke-width:1" />
+  <rect x="503.48651" y="-19.099335" width="21.270876" height="21.270876" transform="rotate(36.562591)" fill="#e6e6e6" id="rect26" style="stroke-width:1" />
+  <circle cx="482.81253" cy="194.89188" fill="#3f3d56" id="circle28" r="4.3464599" style="stroke-width:1" />
+  <circle cx="394.43457" cy="165.91545" fill="#3f3d56" id="circle30" r="4.3464599" style="stroke-width:1" />
+  <circle cx="468.32431" cy="135.49026" fill="#3f3d56" id="circle32" r="4.3464599" style="stroke-width:1" />
+</svg>

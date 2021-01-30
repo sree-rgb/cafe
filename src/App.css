@@ -16,7 +16,6 @@ body {
 .card {
   height: 13rem;
   color: #FFF5F0;
-  background-color: #595654;
   padding-bottom: 4rem;
   overflow: hidden;
   margin: 1rem;
@@ -130,5 +129,64 @@ body {
     transform: rotateZ(-3deg); }
   100% {
     transform: rotateZ(0deg); } }
+.menu-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 35% 30% 35%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "category0 menudrink category1" "category2 menudrink category3"; }
+
+.category0 {
+  grid-area: category0;
+  text-align: right;
+  margin-right: 4rem; }
+
+.category1 {
+  grid-area: category1;
+  text-align: left; }
+
+.category2 {
+  grid-area: category2;
+  text-align: right;
+  margin-right: 4rem; }
+
+.category3 {
+  grid-area: category3;
+  text-align: left; }
+
+.menu-title {
+  text-align: center;
+  color: #FFF5F0; }
+
+.category-title {
+  color: #C74A37; }
+
+.category-title1 {
+  text-align: left;
+  margin-left: 2.4rem; }
+
+.category-title3 {
+  text-align: left;
+  margin-left: 2.4rem; }
+
+.category-title {
+  font-size: 2rem; }
+
+.menu-item {
+  list-style: none;
+  margin-top: 1rem;
+  color: #FFF5F0;
+  font-size: 1.5rem; }
+
+.menu-container {
+  background-color: #302E2D;
+  height: 100%;
+  width: 100%; }
+
+.menu-drink {
+  grid-area: menudrink;
+  align-self: center;
+  justify-self: center;
+  height: 90%; }
 
 /*# sourceMappingURL=App.css.map */
