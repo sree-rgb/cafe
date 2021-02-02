@@ -39,6 +39,7 @@ function Home() {
   let [imageGetter,setImage]=useState('coffee-1.png')
   useEffect(()=>{
     let clearID=setInterval(()=>{setImage(image_gen.next().value)},5000)
+    return ()=>{clearInterval(clearID)}
   },[])
 
   return (
@@ -47,7 +48,7 @@ function Home() {
       <img src={imageGetter} />
     	<div className="cardbox">
     	<Card src={'coffee1.svg'} text={'Espresso'}/>
-    	<Card src={'coffee2r.svg'} text={'Hot or Iced'}/>
+    	<Card src={'coffee2r2.svg'} text={'Hot or Iced'}/>
     	<Card src={'coffee3r.svg'} text={'Caffe latte'}/>
     	</div>
 

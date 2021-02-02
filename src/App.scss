@@ -21,7 +21,7 @@ body{
 }
 .cardbox{
 	width:25rem;
-
+  margin-left:4rem;
 
 }
 .card{
@@ -32,8 +32,9 @@ body{
   margin:1rem;
 
   margin-bottom:2.5rem;
-  border-top: solid .5px black;
+ 
 }
+
 .card h3{
   text-align:center;
 }
@@ -41,14 +42,16 @@ body{
   overflow:hidden;
 }
 .card_image{
+  display:block;
   width:16rem;
-  padding-left:4rem;
+  padding-left:2.2rem;
 }
 .card_image:hover{
   animation:skew2 .7s;
 }
 .home_container img{
   width:60%;
+  margin-left:2rem;
 }
 
 
@@ -78,18 +81,20 @@ body{
 .home_container > img{
   width:80%;
 
-  margin-left:3rem;
+
 }
 .card {
   height:25rem
 }
 .cardbox{
   width:100%;
+  margin-left:0;
+
 }
 .card_image{
   width:100%;
-  padding:0;
-  margin-left:20%;
+  padding-left:4rem;
+  
 }
 .card h3{
   text-align:center;
@@ -232,4 +237,44 @@ align-self:center;
 justify-self:center;
   height:90%;
 
+}
+@media only screen and (max-width: 1000px) {
+.menu-grid{
+  width:100%;
+  display:grid;
+  grid-template-columns:50% 50%;
+  grid-template-rows:1fr 1fr 1fr;
+  grid-template-areas:
+  "category0 category1"
+  "category2 category3"
+  "menudrink menudrink";
+
+ 
+}
+  
+}
+.story{
+  background-color:$secondary-color;
+  color:$primary-color;
+  padding-bottom:40%;
+  overflow-y:hidden;
+}
+.story-grid-text >h1{
+  color:$primary-red-color
+}
+.story-grid{
+  display:grid;
+  grid-template-columns:3fr 1fr;
+  grid-template-rows:1fr;
+   grid-template-areas:
+  "story-text  story-image";
+}
+.story-grid-text{
+  align-self:center;
+  grid-area:story-text;
+  font-size:1.5rem;
+}
+.story-img{
+   grid-area:story-image ;
+   width:100%;
 }
