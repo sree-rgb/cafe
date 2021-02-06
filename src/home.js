@@ -48,7 +48,7 @@ function Home() {
       <img src={imageGetter} />
     	<div className="cardbox">
     	<Card src={'coffee1.svg'} text={'Espresso'}/>
-    	<Card src={'coffee2r2.svg'} text={'Hot or Iced'}/>
+    	<Card src={'coffee2r2.svg'} text={'Frappe'}/>
     	<Card src={'coffee3r.svg'} text={'Caffe latte'}/>
     	</div>
 

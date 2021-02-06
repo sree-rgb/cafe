@@ -7,7 +7,7 @@ $offerbox-color:#E0D90B;
 
 
 body{
-	background-color:$primary-color ;
+	background-color:$secondary-color ;
   overflow-x:hidden;
 }
 .home_container{
@@ -44,13 +44,13 @@ body{
 .card_image{
   display:block;
   width:16rem;
-  padding-left:2.2rem;
+  padding-left:1.0rem;
 }
 .card_image:hover{
   animation:skew2 .7s;
 }
 .home_container img{
-  width:60%;
+  width:55%;
   margin-left:2rem;
 }
 
@@ -70,6 +70,14 @@ body{
   text-align:center;
   padding:1rem;
   }
+@media only screen and (max-width: 1200px) {
+.card{
+  height:10rem;
+}
+.card_image{
+  padding-left:.2rem;
+}
+}
 
 @media only screen and (max-width: 800px) {
   .home_container{
@@ -100,7 +108,7 @@ body{
   text-align:center;
 }
 .banner{
-  margin-top:-10%
+  margin-top:10%
 }
 .offerbox{
   margin-left:10.5%;
@@ -117,6 +125,7 @@ body{
   }
 .banner{
 width:100%;
+margin-top:10%;
 }
 .offerbox{
 width:98%;
@@ -135,6 +144,7 @@ margin-left:-13%;
   }
 .banner{
 width:100%;
+margin-top:10%;
 }
 .offerbox{
 width:98%;
@@ -163,8 +173,8 @@ margin-left:-13%;
 }
 @keyframes skew2 {
   0%   {transform:rotateZ(0deg)}
-  25%   {transform:rotateZ(3deg)}
-  50%  {transform:rotateZ(-3deg)}
+  25%   {transform:rotateZ(1.18deg)}
+  50%  {transform:rotateZ(-1.18deg)}
   
   100% {transform:rotateZ(0deg)}
 }
@@ -256,7 +266,7 @@ justify-self:center;
 .story{
   background-color:$secondary-color;
   color:$primary-color;
-  padding-bottom:40%;
+  padding-top:1rem;
   overflow-y:hidden;
 }
 .story-grid-text >h1{
@@ -264,12 +274,14 @@ justify-self:center;
 }
 .story-grid{
   display:grid;
+  margin:3rem;
   grid-template-columns:3fr 1fr;
   grid-template-rows:1fr;
    grid-template-areas:
   "story-text  story-image";
 }
 .story-grid-text{
+  margin-right:2rem;
   align-self:center;
   grid-area:story-text;
   font-size:1.5rem;
@@ -277,4 +289,61 @@ justify-self:center;
 .story-img{
    grid-area:story-image ;
    width:100%;
+}
+.story_menu_list{
+  display:flex;
+  list-style:none;
+
+}
+.story_menu_item{
+  padding:1rem;
+  border-left:1px  $primary-color;
+  button{
+  color:$primary-color;
+  background-color:$secondary-color;
+  border:none;
+  font-size:1.2rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+.story-grid{
+  display:grid;
+  margin:3rem;
+  grid-template-columns:1fr;
+  grid-template-rows:1fr 1fr;
+   grid-template-areas:
+  "story-text" "story-image";
+}
+.story-grid-text{
+
+  align-self:top;
+  grid-area:story-text;
+  font-size:1.5rem;
+}
+.story{
+  padding-bottom:10%;
+  }
+}
+
+.navbar{
+  display:flex
+}
+.navlist{
+display:flex;
+  list-style:none;
+}
+.navbrand{
+  padding-left:1rem;
+  margin-top:2rem;
+  font-size:1.7rem;
+  color:$primary-color;
+}
+.nav-item{
+  padding:1rem;
+  button{
+  background-color:$secondary-color;
+  border:None;
+  color:$primary-color;
+  font-size:1.5rem;
+  }
 }

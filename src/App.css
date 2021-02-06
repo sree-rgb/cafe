@@ -1,5 +1,5 @@
 body {
-  background-color: #FFF5F0;
+  background-color: #302E2D;
   overflow-x: hidden; }
 
 .home_container {
@@ -31,13 +31,13 @@ body {
 .card_image {
   display: block;
   width: 16rem;
-  padding-left: 2.2rem; }
+  padding-left: 1.0rem; }
 
 .card_image:hover {
   animation: skew2 .7s; }
 
 .home_container img {
-  width: 60%;
+  width: 55%;
   margin-left: 2rem; }
 
 .banner {
@@ -54,6 +54,12 @@ body {
   text-align: center;
   padding: 1rem; }
 
+@media only screen and (max-width: 1200px) {
+  .card {
+    height: 10rem; }
+
+  .card_image {
+    padding-left: .2rem; } }
 @media only screen and (max-width: 800px) {
   .home_container {
     display: block;
@@ -77,7 +83,7 @@ body {
     text-align: center; }
 
   .banner {
-    margin-top: -10%; }
+    margin-top: 10%; }
 
   .offerbox {
     margin-left: 10.5%; } }
@@ -91,7 +97,8 @@ body {
     margin-left: 0; }
 
   .banner {
-    width: 100%; }
+    width: 100%;
+    margin-top: 10%; }
 
   .offerbox {
     width: 98%;
@@ -106,7 +113,8 @@ body {
     margin-left: 0; }
 
   .banner {
-    width: 100%; }
+    width: 100%;
+    margin-top: 10%; }
 
   .offerbox {
     width: 98%;
@@ -125,9 +133,9 @@ body {
   0% {
     transform: rotateZ(0deg); }
   25% {
-    transform: rotateZ(3deg); }
+    transform: rotateZ(1.18deg); }
   50% {
-    transform: rotateZ(-3deg); }
+    transform: rotateZ(-1.18deg); }
   100% {
     transform: rotateZ(0deg); } }
 .menu-grid {
@@ -200,7 +208,7 @@ body {
 .story {
   background-color: #302E2D;
   color: #FFF5F0;
-  padding-bottom: 40%;
+  padding-top: 1rem;
   overflow-y: hidden; }
 
 .story-grid-text > h1 {
@@ -208,11 +216,13 @@ body {
 
 .story-grid {
   display: grid;
+  margin: 3rem;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "story-text  story-image"; }
 
 .story-grid-text {
+  margin-right: 2rem;
   align-self: center;
   grid-area: story-text;
   font-size: 1.5rem; }
@@ -220,5 +230,54 @@ body {
 .story-img {
   grid-area: story-image;
   width: 100%; }
+
+.story_menu_list {
+  display: flex;
+  list-style: none; }
+
+.story_menu_item {
+  padding: 1rem;
+  border-left: 1px #FFF5F0; }
+  .story_menu_item button {
+    color: #FFF5F0;
+    background-color: #302E2D;
+    border: none;
+    font-size: 1.2rem; }
+
+@media only screen and (max-width: 1000px) {
+  .story-grid {
+    display: grid;
+    margin: 3rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "story-text" "story-image"; }
+
+  .story-grid-text {
+    align-self: top;
+    grid-area: story-text;
+    font-size: 1.5rem; }
+
+  .story {
+    padding-bottom: 10%; } }
+.navbar {
+  display: flex; }
+
+.navlist {
+  display: flex;
+  list-style: none; }
+
+.navbrand {
+  padding-left: 1rem;
+  margin-top: 2rem;
+  font-size: 1.7rem;
+  color: #FFF5F0; }
+
+.nav-item {
+  padding: 1rem; }
+  .nav-item button {
+    background-color: #302E2D;
+    border: None;
+    color: #FFF5F0;
+    font-size: 1.5rem; }
 
 /*# sourceMappingURL=App.css.map */
