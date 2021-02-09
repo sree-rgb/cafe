@@ -16,7 +16,7 @@ function Story(props){
 			<h1>{props.title}</h1>
 			{story_text}
 		</div>
-		<img className="story-img" src={props.image} alt="coffee image"/>
+		<img className="story-img" src={props.image} alt={"A cup of "+props.title}/>
 
 	</div>
 	)

@@ -28,7 +28,7 @@ function Menu(){
 			<h1 className='menu-title'>Menu</h1>
 
 			<div className='menu-grid'>
-			<img src="menudrink.svg" className='menu-drink'/>
+			<img src="menudrink.svg" className='menu-drink' alt=""/>
 				{category_items}
 		
 			</div>

@@ -12,29 +12,38 @@ body {
 
 .cardbox {
   width: 25rem;
-  margin-left: 4rem; }
+  background-color: #4F4B46;
+  margin-left: 5%;
+  margin-bottom: 1%; }
 
 .card {
   height: 13rem;
   color: #FFF5F0;
   padding-bottom: 4rem;
   overflow: hidden;
-  margin: 1rem;
   margin-bottom: 2.5rem; }
 
 .card h3 {
   text-align: center; }
 
-.cardbody {
-  overflow: hidden; }
+.card-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "card-title" "card-image"; }
+
+.card-title {
+  grid-area: card-title; }
 
 .card_image {
-  display: block;
   width: 16rem;
-  padding-left: 1.0rem; }
+  grid-area: card-image;
+  justify-self: center;
+  padding-right: 2rem; }
 
 .card_image:hover {
-  animation: skew2 .7s; }
+  animation: grow .7s; }
 
 .home_container img {
   width: 55%;
@@ -56,10 +65,8 @@ body {
 
 @media only screen and (max-width: 1200px) {
   .card {
-    height: 10rem; }
-
-  .card_image {
-    padding-left: .2rem; } }
+    height: 10rem;
+    padding-bottom: 10rem; } }
 @media only screen and (max-width: 800px) {
   .home_container {
     display: block;
@@ -76,8 +83,7 @@ body {
     margin-left: 0; }
 
   .card_image {
-    width: 100%;
-    padding-left: 4rem; }
+    width: 100%; }
 
   .card h3 {
     text-align: center; }
@@ -89,8 +95,7 @@ body {
     margin-left: 10.5%; } }
 @media only screen and (max-width: 600px) {
   .card {
-    height: 27rem;
-    margin-bottom: -10rem; }
+    height: 27rem; }
 
   .home_container > img {
     width: 100%;
@@ -100,13 +105,15 @@ body {
     width: 100%;
     margin-top: 10%; }
 
+  .card {
+    margin-bottom: 2%; }
+
   .offerbox {
     width: 98%;
     margin-left: -13%; } }
 @media only screen and (max-width: 400px) {
   .card {
-    height: 23rem;
-    margin-bottom: -10rem; }
+    height: 23rem; }
 
   .home_container > img {
     width: 100%;
@@ -121,9 +128,9 @@ body {
     margin-left: -13%; } }
 @keyframes grow {
   from {
-    transform: scale(1); }
+    transform: scale(0.95); }
   to {
-    transform: scale(2.03); } }
+    transform: scale(1); } }
 @keyframes skew {
   from {
     transform: rotateZ(0deg); }
@@ -273,11 +280,86 @@ body {
   color: #FFF5F0; }
 
 .nav-item {
-  padding: 1rem; }
-  .nav-item button {
-    background-color: #302E2D;
-    border: None;
-    color: #FFF5F0;
-    font-size: 1.5rem; }
+  margin: 0;
+  padding: 0;
+  padding-top: 1.0rem; }
+
+.nav-item a {
+  padding: .5rem 1rem 0.5rem 1rem;
+  border: None;
+  color: #FFF5F0;
+  font-size: 1.5rem; }
+
+.nav-item :hover {
+  background-color: #4F4B46; }
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+     supported by Chrome and Opera */ }
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px; }
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #FFF5F0;
+  boder-radius: 10px; }
+
+@media (max-width: 600px) {
+  .toggle-button {
+    display: flex; }
+
+  .navlist {
+    display: none;
+    width: 100%; }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start; }
+
+  .navbar ul {
+    width: 100%;
+    flex-direction: column; }
+
+  .navlist li {
+    text-align: center; }
+
+  .navlist.active {
+    display: flex; } }
+.about-title {
+  color: #C74A37;
+  text-align: center; }
+
+.about-text-para {
+  color: #FFF5F0; }
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  margin: 3%; }
+
+.about-image {
+  width: 75%;
+  justify-self: center;
+  margin: auto; }
 
 /*# sourceMappingURL=App.css.map */
